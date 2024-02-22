@@ -45,4 +45,5 @@ jobs:
 
       - name: deploy to Github pages
         run: |
+          pnpm run build
           pnpm run deploy
