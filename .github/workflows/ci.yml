@@ -9,7 +9,7 @@ env:
   PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-  release:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code repository
@@ -45,4 +45,4 @@ jobs:
 
       - name: deploy to Github pages
         run: |
-          pnpm deploy
+          pnpm run deploy
